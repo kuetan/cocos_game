@@ -4,6 +4,14 @@
 #include "cocos2d.h"
 
 class MainScene :public cocos2d:Layer {
- protected:
+protected:
+  MainScene();
+  virtual ~MainScene();
+  bool init();
+  
+public:
+  static cocos2d::Scene* createScene();
+  CREATE_FUNC(MainScene);
+};
 
-}
+#endif
